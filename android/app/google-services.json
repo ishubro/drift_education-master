@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "362864376592",
+    "firebase_url": "https://drift-offline.firebaseio.com",
+    "project_id": "drift-offline",
+    "storage_bucket": "drift-offline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362864376592:android:9d01d1e116224bcd074395",
+        "android_client_info": {
+          "package_name": "com.drifteducation.drift_education"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362864376592-5njju9aotdhsbbavla3i905ah46fuuca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMT8Jl5FIb5VbOh89jcMNkULmE7EwOw8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362864376592-5njju9aotdhsbbavla3i905ah46fuuca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
