@@ -1,6 +1,6 @@
+import 'package:drift_education/screens/admin/adminAttendenceScreen.dart';
+import 'package:drift_education/screens/admin/adminHomeScreen.dart';
 import 'package:drift_education/screens/finalHomeScreen.dart';
-import 'package:drift_education/screens/homeScreen.dart';
-import 'package:drift_education/screens/introScreen.dart';
 import 'package:drift_education/screens/signupScreen.dart';
 import 'package:flutter/material.dart';
 import 'screens/signIn.dart';
@@ -17,14 +17,15 @@ class MyApp extends StatelessWidget {
         '/signin':(context)=>SignIn(),
         '/signup':(context)=>SignUpScreen(),
         '/homepage':(context)=>FinalHomeScreen(),
+        '/attendenceStudent': (context) => AdminAttendenceScreen(),
       },
       title: 'Drift Education',
       theme: ThemeData(
-        primaryColor: Color(0xFFF9F9F9)
+          primaryColor: Color(0xFFF9F9F9)
       ),
-      home: IntroScreen(),
+      home: AdminHomeScreen(),
     );
   }
 }
 
-//update 1/4/20
+//update 11/4/20

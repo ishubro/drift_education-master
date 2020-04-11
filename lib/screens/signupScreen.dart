@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:drift_education/widgets/CustomTextField.dart';
 import 'package:drift_education/widgets/CustomFlatButton.dart';
-import 'package:dropdown_formfield/dropdown_formfield.dart';
 
 
 class SignUpScreen extends StatefulWidget {

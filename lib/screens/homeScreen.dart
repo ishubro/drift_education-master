@@ -1,3 +1,4 @@
+import 'package:drift_education/screens/attendenceScreen.dart';
 import 'package:drift_education/screens/chatScreen.dart';
 import 'package:drift_education/screens/finalHomeScreen.dart';
 import 'package:drift_education/screens/myaccountScreen.dart';
@@ -26,9 +27,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   final List<Widget> _children = [
     FinalHomeScreen(),
     ProgressScreen(),
+    AttendenceScreen(),
     ChatScreen(),
     MyAccountScreen(),
   ];
+
   void _onItemTapped(int index) {
     setState(() {
       _currentIndex = index;
@@ -45,16 +48,16 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         child: ListView(
           children: <Widget>[
             new UserAccountsDrawerHeader(
-                accountName: Text('Vedant Lama'),
-                accountEmail: Text('a@gmail.com'),
-            currentAccountPicture: CircleAvatar(
-              backgroundColor: Colors.white,
-              backgroundImage: NetworkImage(
-                  "https://www.woolha.com/media/2019/06/buneary.jpg"),
-            ),
-            decoration: BoxDecoration(
-              color: Colors.blue,
-            ),),
+              accountName: Text('Vedant Lama'),
+              accountEmail: Text('a@gmail.com'),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.white,
+                backgroundImage: NetworkImage(
+                    "https://www.woolha.com/media/2019/06/buneary.jpg"),
+              ),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),),
             ListTile(
               title: Text('Home'),
               trailing: Icon(Icons.home),
@@ -85,6 +88,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
           BottomNavigationBarItem(
               icon: Icon(Icons.trending_up), title: Text('Progress')),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search), title: Text('Attendence'),
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.chat), title: Text('Chat')),
           BottomNavigationBarItem(
               icon: Icon(Icons.account_circle), title: Text('My Account'))
